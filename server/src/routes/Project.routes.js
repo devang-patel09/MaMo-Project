@@ -1,17 +1,17 @@
-import { Router } from "express";
+// import { Router } from "express";
 
-const projectRouter = Router();
+// const projectRouter = Router();
 
-projectRouter.get("/", getAllProjects);
+// projectRouter.get("/", getAllProjects);
 
-projectRouter.post("/", createProject);
+// projectRouter.post("/", createProject);
 
-projectRouter.get("/:id", getProjectById);
+// projectRouter.get("/:id", getProjectById);
 
-projectRouter.put("/:id", updateProject);
+// projectRouter.put("/:id", updateProject);
 
-projectRouter.delete("/:id", deleteProject);
+// projectRouter.delete("/:id", deleteProject);
 
-projectRouter.post("/:id/invite", inviteUser);
+// projectRouter.post("/:id/invite", inviteUser);
 
-export default projectRouter;
+// export default projectRouter;
