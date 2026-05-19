@@ -1,13 +1,13 @@
-import { Router } from "express";
+// import { Router } from "express";
 
-const AiRouter = Router();
+// const AiRouter = Router();
 
-AiRouter.post("/explain", explainBug);
+// AiRouter.post("/explain", explainBug);
 
-AiRouter.post("/suggest", suggestFix);
+// AiRouter.post("/suggest", suggestFix);
 
-AiRouter.post("/summarize", summarizeBugs);
+// AiRouter.post("/summarize", summarizeBugs);
 
-AiRouter.post("/prioritize", prioritizeBugs);
+// AiRouter.post("/prioritize", prioritizeBugs);
 
-export default AiRouter;
+// export default AiRouter;
