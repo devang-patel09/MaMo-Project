@@ -29,11 +29,11 @@ export async function registerUser(req, res) {
     const emailVerificationToken = jwt.sign({ email: newUser.email }, process.env.JWT_SECRET, {
       expiresIn: "7d",
     });
-    await sendEmail({
-      to: newUser.email,
-      subject: "Verify your email",
-      html: `<h1>Email Verification</h1><p>Click the link below to verify your email:</p><a href="http://localhost:3000/api/auth/verify-email?token=${emailVerificationToken}">Verify Email</a>`,
-    });
+    // await sendEmail({
+    //   to: newUser.email,
+    //   subject: "Verify your email",
+    //   html: `<h1>Email Verification</h1><p>Click the link below to verify your email:</p><a href="http://localhost:3000/api/auth/verify-email?token=${emailVerificationToken}">Verify Email</a>`,
+    // });
     return res
       .status(201)
       .json({
